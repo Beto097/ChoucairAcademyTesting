@@ -8,23 +8,15 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 
 public class Login implements Task {
-    private String strUser;
-    private String strPassword;
-
-    public Login(String strUser, String strPassword) {
-        this.strUser = strUser;
-        this.strPassword = strPassword;
-    }
-
-    public static Login onThepage(String strUser, String strPassword) {
-        return Tasks.instrumented(Login.class,strUser,strPassword);
+    public static Login onThepage() {
+        return Tasks.instrumented(Login.class);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(Click.on(ChoucairLoginPage.LOGIN_BUTTON),
-                Enter.theValue(strUser).into(ChoucairLoginPage.INPUT_USER),
-                Enter.theValue(strPassword).into(ChoucairLoginPage.INPUT_PASSWORD),
+                Enter.theValue("892059").into(ChoucairLoginPage.INPUT_USER),
+                Enter.theValue("Choucair2021*").into(ChoucairLoginPage.INPUT_PASSWORD),
                 Click.on(ChoucairLoginPage.ACCESS_BUTTON));
     }
 }

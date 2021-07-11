@@ -29,7 +29,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last.edited.regexp" value="Metodología Bancolombia" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../co.com.choucair.certification.ProyectoFull" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
@@ -90,6 +90,7 @@
         </option>
         <option name="taskNames">
           <list>
+            <option value=":cleanTest" />
             <option value=":test" />
           </list>
         </option>
