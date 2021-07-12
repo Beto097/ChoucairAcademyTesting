@@ -1,10 +1,9 @@
 package co.com.choucair.certification.ProyectoBase.userinterface;
 
-import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
 import org.openqa.selenium.By;
 
-public class SearchCoursePage extends PageObject {
+public class SearchCoursePage {
     public static final Target SELECT_CAT = Target.the("Choose what kind of course").
             located(By.xpath("/html[@class='yui3-js-enabled']/body[@id='page-my-index']/div[@id='page-wrapper']/div[@id='page']/div[@id='learningcontent']/div[@id='page-content']/div[@id='region-main-box']/section[@id='region-main']/div[2]/aside[@id='block-region-content']/section[@id='inst3034']/div[@class='card-body p-3']/div[@class='card-text content mt-3']/div[@class='no-overflow']/center/div[@class='container']/div[@class='row']/div[@class='card-group col-md-6 col-lg-12']/div[@id='certificaciones']/div[@class='card-header']/a/h4/strong"));
     public static final Target SEARCH_BOX = Target.the("Where the user write the course").
